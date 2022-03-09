@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>OUWE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1 {text-align: center;font-family: "Raleway", sans-serif}
+body {background-color: #b5aa8e;}
+h1 {text-align: center;font-family: "Cambria"; font-size:50px}
+h2 {text-align: center;font-family: "Cambria"; font-size:20px}
+p {text-align: center;font-family: "Cambria"; font-size:20px}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
-  min-height: 100%;
+  background-image: url('background.jpg');
+  min-height:auto;
   background-position: center;
   background-size: cover;
 }
 </style>
+<style type="text/css">  
+	#boxleft { position: absolute;   
+		   height: auto; width: 200px;    
+		   left: 9px; top: 9px; }      
+	#boxcentertop { position: fixed; 
+			left: 50%;
+			top: 10%;
+			transform: translate(-50%, -50%)} 
+	#boxcentermain { position: fixed; 
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%)}   
+
+</style>    
 </head>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Westend, 12345 Frankfurt 
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top centering">[OUWE]</h1>
-	<h1 class="w3-huge w3-animate-top">Sauerteigbäckerei</h1>
+<div>
+	<div id="boxleft">
+	<h2>Westend, 12345 Frankfurt </h2>
+	</div>  
+  <div id="boxcentertop">
+    <img src=ouwe.jpg width=400px height=auto>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">Coming soon</p>
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  <div id="boxcentermain">
+    <p> Landingpage coming soon.</p>
   </div>
 </div>
 
