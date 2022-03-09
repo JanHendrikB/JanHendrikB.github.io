@@ -18,23 +18,36 @@ body, html {height: 100%}
 }
 </style>
 <style type="text/css">  
-	#boxleft { position: absolute;   
+	#boxleft { position: fixed;   
 		   height: auto; width: 200px;    
-		   left: 9px; top: 9px; }      
+		   left: 9px; top: 9px; 
+		   z-index:1}      
 	#boxcentertop { position: fixed; 
 			left: 50%;
 			top: 10%;
-			transform: translate(-50%, -50%)} 
-	#boxcentermain { position: fixed; 
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%)}   
+			transform: translate(-50%, -50%);
+			z-index: 1} 
+	#boxcentermainbg { position: fixed; 
+			left: 0%;
+			top: 25%;
+			width: 100%;
+			height: 100%}   
+	#boxcentermain { position: absolute; 
+			left: 10%;
+			top: 25%;
+			width: 80%;
+			height: 100%}  
+	#boxbg {position:fixed;
+			top:0;
+			height: 180px;
+			width: 100%;
+			z-index: 1}
 
 </style>    
 </head>
 <body>
-
 <div>
+<div style="background-color:  #b5aa8e;;" id="boxbg"> </div>
 	<div id="boxleft">
 	<h2>Westend, 12345 Frankfurt </h2>
 	</div>  
@@ -42,8 +55,10 @@ body, html {height: 100%}
     <img src=ouwe.jpg width=400px height=auto>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
   </div>
-  <div id="boxcentermain">
-    <p> Landingpage coming soon.</p>
+  <div style="background-color: lightgrey;" id="boxcentermain">
+	<div>
+   <p> Landingpage coming soon.</p>
+   </div>
   </div>
 </div>
 
